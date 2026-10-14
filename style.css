@@ -673,3 +673,33 @@ body {
     page-break-inside: avoid;
   }
 }
+/* FIX FOTO PROFIL - UKURAN KECIL */
+.cv-container .sidebar .profile-photo {
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 15px 10px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.cv-container .sidebar .profile-img {
+  display: block !important;
+  width: 95px !important;
+  min-width: 0 !important;
+  max-width: 95px !important;
+  height: 115px !important;
+  max-height: 115px !important;
+  object-fit: cover !important;
+  border-radius: 48px 48px 12px 12px !important;
+  margin: 0 auto !important;
+}
+
+@media (max-width: 600px) {
+  .cv-container .sidebar .profile-img {
+    width: 90px !important;
+    max-width: 90px !important;
+    height: 110px !important;
+    max-height: 110px !important;
+  }
+}
